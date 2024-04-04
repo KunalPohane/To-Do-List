@@ -1,0 +1,163 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+* {
+
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+  box-sizing: border-box;
+
+}
+
+
+.container {
+
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.todoapp {
+
+  height: auto;
+  min-height: 150px;
+  width: 100%;
+  max-width: 540px;
+  background-color: white;
+  margin: 100px auto 20px;
+  padding: 20px 30px 70px;
+  border: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.row {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 25px;
+
+}
+
+input {
+
+  border: none;
+  width: 80%;
+  background-color: lightgray;
+  outline: none;
+
+}
+
+
+button {
+  background-color: lightgray;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 7px;
+
+}
+
+
+ul li {
+
+
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  overflow-wrap: break-word;
+  text-align: left;
+
+
+}
+
+ul li.checked::before {
+
+  background-image: url("https://imgs.search.brave.com/67Qlzjv0lTM7ZPHMsh-gnrr6qgQrWAFJZzuAoTWwGNo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODYzODNhMDdkOTA4/NTBmYzNjZTI5MGYu/cG5n");
+  height: 28px;
+  width: 28px;
+
+
+}
+
+
+ul li::before {
+
+  content: "";
+  position: absolute;
+  /* border:1px solid red; */
+  top: 8px;
+  height: 28px;
+  width: 28px;
+  /* border-radius: 50px; */
+  background-image: url('https://imgs.search.brave.com/fyFCZP_mmKGxv8tieJI7jFdjzoSip2GtU7GtWHIu37Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9jaXJjbGUt/aWNvbi0yNTZ4MjU2/LXoxeHN6ZTQ3LnBu/Zw');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 10px
+}
+
+
+
+ul li span {
+
+  position: absolute;
+  right: 0px;
+  top: 13px;
+  width: 50px;
+  height: 50px;
+  visibility: hidden;
+
+
+}
+
+
+ul li:hover span {
+
+  visibility: visible;
+
+}
+
+.smallhead,
+.foothead {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 0.7rem;
+  color: #a7a7a3;
+
+
+}
+
+
+.tick {
+
+  margin-right: 15px;
+
+}
+
+.margin-foot span {
+
+  margin-right: 5px;
+
+}
